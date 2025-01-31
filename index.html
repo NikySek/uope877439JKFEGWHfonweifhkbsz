@@ -1,3 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rust Trade Market</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
 <body>
-<p>hello negr</p>
+    <header>
+        <h1>Rust Trade Market</h1>
+        <button id="steam-login">Login via Steam</button>
+    </header>
+
+    <main>
+        <section id="deposit">
+            <h2>Deposit Your Item</h2>
+            <input type="text" id="item-name" placeholder="Item name">
+            <input type="number" id="item-price" placeholder="Price">
+            <button onclick="depositItem()">Deposit</button>
+        </section>
+
+        <section id="marketplace">
+            <h2>Marketplace</h2>
+            <div id="items-list"></div>
+        </section>
+    </main>
 </body>
+</html>
